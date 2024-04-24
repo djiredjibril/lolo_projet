@@ -1,0 +1,105 @@
+:root {
+    --btn-blue: #163298;
+    --input-border-color: #7B7B7B;
+    --password-forgotcolor: #818181;
+    --white: #ffffff;
+    --login-color: #1E1E1E;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--white);
+}
+
+/* login css start */
+.login {
+    height: 100vh;
+    width: 100%;
+}
+
+.login .form {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .form .form-child {
+    width: 450px;
+    height: 450px;
+    padding: 5px;
+}
+
+.login .form-child .form-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login .form-child .title,
+.login .form-child {
+    margin: 60px 0;
+
+}
+.login .form-child .title h2
+{
+    font-size: 52px;
+}
+.login .form-child .surname,
+.login .form-child .password,
+.login .form-child .btn-submit {
+    margin: 34px 0;
+    height: 45px;
+}
+
+.login .form-child .surname,
+.login .form-child .password {
+    border-bottom: 2px solid var(--input-border-color);
+}
+
+.login .form-child .surname input,
+.login .form-child .password input,
+.login .form-child .btn-submit input {
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+.login .form-child .surname input:focus,
+.login .form-child .password input:focus,
+.login .form-child .btn-submit input:focus {
+    outline: none;
+}
+
+.login .form-child .btn-submit input {
+    background-color: var(--btn-blue);
+    border-radius: 25px;
+    padding: 4px;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.login .form-child .btn-submit input:hover {
+    background-color: var(--input-border-color);
+    color: var(--white);
+    font-size: 21px;
+}
+
+.login .forgot-password
+{
+    display: flex;
+    justify-content: center;
+}
+.login .forgot-password a
+{
+    text-decoration: none;
+}
+.login .forgot-password p 
+{
+    color: var(--input-border-color);
+}
+
+/* login css end */
